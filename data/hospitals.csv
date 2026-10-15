@@ -1,0 +1,8 @@
+# Fictional hospitals for the prototype.
+# landmark: id from landmarks.csv. facilities: separated by |
+id,name,landmark,facilities
+H1,City Care Multispeciality,6,ICU|CT_SCAN|CATH_LAB|BLOOD_BANK|ANTI_RABIES
+H2,Valley Government Hospital,1,ICU|BLOOD_BANK|ANTIVENOM|ANTI_RABIES
+H3,Neuro and Heart Institute,16,ICU|CT_SCAN|CATH_LAB
+H4,Clement Town Medical Centre,11,BLOOD_BANK|ANTIVENOM|ANTI_RABIES
+H5,Prem Nagar Community Hospital,10,ICU|ANTIVENOM|ANTI_RABIES

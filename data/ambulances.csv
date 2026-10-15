@@ -1,0 +1,15 @@
+# Ambulances start at their home hospital.
+# type: BLS (Basic Life Support) or ALS (Advanced Life Support)
+id,hospital,type
+A1,H1,ALS
+A2,H1,ALS
+A3,H1,BLS
+A4,H2,ALS
+A5,H2,BLS
+A6,H2,BLS
+A7,H3,ALS
+A8,H3,ALS
+A9,H4,BLS
+A10,H4,ALS
+A11,H5,BLS
+A12,H5,ALS
