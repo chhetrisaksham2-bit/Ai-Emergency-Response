@@ -1,0 +1,9 @@
+# Injury types shown in the patient's menu, in this order.
+# base_priority: starting urgency before the intensity questions add points.
+# SAMPLE VALUES - have a doctor or medical reference review them.
+code,name,base_priority
+BLEEDING,Bleeding injury,5
+DOG_BITE,Dog bite,2
+SNAKE_BITE,Snake bite,6
+STROKE,Stroke,8
+CARDIAC_ARREST,Cardiac arrest,10
