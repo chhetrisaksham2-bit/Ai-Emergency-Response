@@ -1,0 +1,4 @@
+build/
+shared/
+third_party/ftxui/build/
+.DS_Store
