@@ -1,0 +1,10 @@
+# Priority demo: four emergencies sent at the same moment, least urgent first.
+# The admin window serves them most urgent first, not in the order they were sent:
+#   road accident (CRITICAL, score 23) and chest pain (CRITICAL, 21) at once - CRITICAL never waits -
+#   then, when the batch window ends, the fracture (MODERATE) and the gym sprain (MINOR).
+# Answers: one per follow-up question, separated by |, as option text or number (1 = first).
+send_at,landmark,injury,patients,answers
+0,ISBT,MUSCLE_TEAR,1,1|1|1
+0,Ballupur Chowk,FRACTURE,1,2|2|1
+0,Clock Tower,ROAD_ACCIDENT,1,2|3|2|3
+0,Rajpur Road,CHEST_PAIN,1,3|2|2|1

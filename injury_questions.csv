@@ -1,0 +1,160 @@
+# Intensity questions. Consecutive rows with the same injury and question text
+# are the options of one question, shown in this order. The chosen option's
+# points are added up; severity_rules.csv turns the total into a severity.
+# SAMPLE VALUES - have a doctor or medical reference review them.
+injury,question,option,points
+FAST_TRACK,"What best describes the patient right now?","Minor injury, can walk and talk",0
+FAST_TRACK,"What best describes the patient right now?","In pain or unwell, but stable",3
+FAST_TRACK,"What best describes the patient right now?","Serious: heavy bleeding, a broken bone or severe pain",6
+FAST_TRACK,"What best describes the patient right now?","Struggling to breathe, chest pain or very confused",9
+FAST_TRACK,"What best describes the patient right now?","EXTREME: unconscious, not breathing or no pulse",12
+BLEEDING,How heavy is the bleeding?,"Slow, small cut",0
+BLEEDING,How heavy is the bleeding?,"Steady, soaking through a cloth",4
+BLEEDING,How heavy is the bleeding?,Spurting or pouring out,7
+BLEEDING,Where is the wound?,"Arm, leg or hand",0
+BLEEDING,Where is the wound?,"Head, neck, chest or stomach",3
+BLEEDING,Is the patient conscious?,"Yes, alert",0
+BLEEDING,Is the patient conscious?,"Confused, drowsy or very pale",3
+BLEEDING,Is the patient conscious?,Unconscious,5
+DOG_BITE,How deep is the bite?,"Scratch or graze, no bleeding",0
+DOG_BITE,How deep is the bite?,Puncture wounds with some bleeding,3
+DOG_BITE,How deep is the bite?,"Deep or torn wounds, or many bites",6
+DOG_BITE,Where is the bite?,Arm or leg,0
+DOG_BITE,Where is the bite?,Hand or fingers,1
+DOG_BITE,Where is the bite?,"Face, head or neck",3
+DOG_BITE,Is it bleeding heavily?,No,0
+DOG_BITE,Is it bleeding heavily?,Yes,3
+SNAKE_BITE,What symptoms does the patient have?,Only pain or marks at the bite,0
+SNAKE_BITE,What symptoms does the patient have?,Swelling spreading up the limb or vomiting,3
+SNAKE_BITE,What symptoms does the patient have?,"Drooping eyelids, slurred speech or trouble breathing",8
+SNAKE_BITE,"Any bleeding from gums or nose, or blood in urine?",No,0
+SNAKE_BITE,"Any bleeding from gums or nose, or blood in urine?",Yes,5
+SNAKE_BITE,How long ago was the bite?,Less than 30 minutes,0
+SNAKE_BITE,How long ago was the bite?,30 minutes to 2 hours,1
+SNAKE_BITE,How long ago was the bite?,More than 2 hours,2
+STROKE,Is one side of the face drooping?,No,0
+STROKE,Is one side of the face drooping?,Yes,2
+STROKE,Is one arm or leg weak or numb?,No,0
+STROKE,Is one arm or leg weak or numb?,Yes,2
+STROKE,Is speech slurred or confused?,No,0
+STROKE,Is speech slurred or confused?,Yes,2
+STROKE,Is the patient conscious?,Yes,0
+STROKE,Is the patient conscious?,Drowsy,3
+STROKE,Is the patient conscious?,Unconscious,6
+STROKE,When did the symptoms start?,Less than 4.5 hours ago,2
+STROKE,When did the symptoms start?,More than 4.5 hours ago or not known,0
+CARDIAC_ARREST,Is the patient conscious?,"Yes, with chest pain",0
+CARDIAC_ARREST,Is the patient conscious?,Fainting or drowsy,4
+CARDIAC_ARREST,Is the patient conscious?,Unconscious,8
+CARDIAC_ARREST,Is the patient breathing normally?,Yes,0
+CARDIAC_ARREST,Is the patient breathing normally?,Gasping or irregular,5
+CARDIAC_ARREST,Is the patient breathing normally?,Not breathing,8
+UNKNOWN_CONDITION,Is the patient conscious?,"Yes, alert",0
+UNKNOWN_CONDITION,Is the patient conscious?,Confused or drowsy,4
+UNKNOWN_CONDITION,Is the patient conscious?,Unconscious,8
+UNKNOWN_CONDITION,Is the patient breathing normally?,Yes,0
+UNKNOWN_CONDITION,Is the patient breathing normally?,Fast or difficult,4
+UNKNOWN_CONDITION,Is the patient breathing normally?,Gasping or not breathing,8
+UNKNOWN_CONDITION,Is the patient feeling nausea or vomiting?,No,0
+UNKNOWN_CONDITION,Is the patient feeling nausea or vomiting?,Nausea only,1
+UNKNOWN_CONDITION,Is the patient feeling nausea or vomiting?,Vomiting again and again,3
+UNKNOWN_CONDITION,Does the patient have chest pain or severe pain anywhere?,No,0
+UNKNOWN_CONDITION,Does the patient have chest pain or severe pain anywhere?,Mild pain,1
+UNKNOWN_CONDITION,Does the patient have chest pain or severe pain anywhere?,Severe pain,4
+UNKNOWN_CONDITION,Is the patient confused or unable to speak clearly?,No,0
+UNKNOWN_CONDITION,Is the patient confused or unable to speak clearly?,Yes,4
+ROAD_ACCIDENT,Is the patient conscious?,"Yes, alert",0
+ROAD_ACCIDENT,Is the patient conscious?,"Confused, drowsy or vomiting",4
+ROAD_ACCIDENT,Is the patient conscious?,Unconscious,8
+ROAD_ACCIDENT,Is there heavy bleeding?,No,0
+ROAD_ACCIDENT,Is there heavy bleeding?,Some bleeding,2
+ROAD_ACCIDENT,Is there heavy bleeding?,Heavy bleeding,5
+ROAD_ACCIDENT,Can the patient move arms and legs?,Yes,0
+ROAD_ACCIDENT,Can the patient move arms and legs?,Only with pain,2
+ROAD_ACCIDENT,Can the patient move arms and legs?,Cannot move or no feeling,6
+ROAD_ACCIDENT,How did it happen?,Slow speed or a fall,0
+ROAD_ACCIDENT,How did it happen?,Bike or car crash,2
+ROAD_ACCIDENT,How did it happen?,Hit by a heavy vehicle or thrown out,4
+FRACTURE,Where is the injury?,"Finger, toe or wrist",0
+FRACTURE,Where is the injury?,"Arm, leg or ankle",2
+FRACTURE,Where is the injury?,"Hip, thigh, spine or skull",5
+FRACTURE,Is the limb badly bent or the bone visible?,No,0
+FRACTURE,Is the limb badly bent or the bone visible?,Badly bent,3
+FRACTURE,Is the limb badly bent or the bone visible?,Bone through the skin,5
+FRACTURE,Can the patient feel and move the fingers or toes below the injury?,Yes,0
+FRACTURE,Can the patient feel and move the fingers or toes below the injury?,No,4
+BURNS,How large is the burn?,Smaller than the patient's palm,0
+BURNS,How large is the burn?,"Larger than the palm, one body part",3
+BURNS,How large is the burn?,Several body parts,7
+BURNS,Where is the burn?,Arm or leg,0
+BURNS,Where is the burn?,"Hands, feet or joints",2
+BURNS,Where is the burn?,"Face, neck or private parts",4
+BURNS,Is there breathing trouble or smoke inhaled?,No,0
+BURNS,Is there breathing trouble or smoke inhaled?,Yes,6
+BURNS,What caused it?,Hot liquid or a hot object,0
+BURNS,What caused it?,Fire,1
+BURNS,What caused it?,Electricity or a chemical,3
+CHEST_PAIN,How bad is the pain?,"Mild, comes and goes",0
+CHEST_PAIN,How bad is the pain?,Strong and constant,3
+CHEST_PAIN,How bad is the pain?,"Crushing, spreading to arm, jaw or back",6
+CHEST_PAIN,"Is there sweating, breathlessness or vomiting with the pain?",No,0
+CHEST_PAIN,"Is there sweating, breathlessness or vomiting with the pain?",Yes,4
+CHEST_PAIN,How long has it lasted?,Less than 5 minutes,0
+CHEST_PAIN,How long has it lasted?,5 to 30 minutes,2
+CHEST_PAIN,How long has it lasted?,More than 30 minutes,3
+CHEST_PAIN,Is the patient conscious?,Yes,0
+CHEST_PAIN,Is the patient conscious?,Fainting or drowsy,5
+BREATHING_DIFFICULTY,Can the patient speak?,Full sentences,0
+BREATHING_DIFFICULTY,Can the patient speak?,Only a few words,4
+BREATHING_DIFFICULTY,Can the patient speak?,Cannot speak,8
+BREATHING_DIFFICULTY,Are the lips or fingertips blue or grey?,No,0
+BREATHING_DIFFICULTY,Are the lips or fingertips blue or grey?,Yes,6
+BREATHING_DIFFICULTY,Did an inhaler or medicine help?,Yes,0
+BREATHING_DIFFICULTY,Did an inhaler or medicine help?,A little,2
+BREATHING_DIFFICULTY,Did an inhaler or medicine help?,"No, or none available",3
+SEIZURE,How long did the fit last?,Less than 2 minutes,0
+SEIZURE,How long did the fit last?,2 to 5 minutes,3
+SEIZURE,How long did the fit last?,More than 5 minutes or still going,7
+SEIZURE,Is this the first fit?,"No, known epilepsy",0
+SEIZURE,Is this the first fit?,"Yes, first time",3
+SEIZURE,Is the patient awake now?,Awake and talking,0
+SEIZURE,Is the patient awake now?,Drowsy or confused,2
+SEIZURE,Is the patient awake now?,Not waking up,6
+SEIZURE,Is there a head injury or a pregnancy?,No,0
+SEIZURE,Is there a head injury or a pregnancy?,Yes,4
+OVERDOSE_POISONING,What was taken?,Extra doses of a common medicine,1
+OVERDOSE_POISONING,What was taken?,"Drugs, sleeping pills or many tablets",4
+OVERDOSE_POISONING,What was taken?,"Pesticide, acid or a household chemical",6
+OVERDOSE_POISONING,Is the patient conscious?,Awake and talking,0
+OVERDOSE_POISONING,Is the patient conscious?,Drowsy or confused,4
+OVERDOSE_POISONING,Is the patient conscious?,Unconscious,8
+OVERDOSE_POISONING,Is the patient breathing normally?,Yes,0
+OVERDOSE_POISONING,Is the patient breathing normally?,Slow or noisy,4
+OVERDOSE_POISONING,Is the patient breathing normally?,Not breathing,8
+ALCOHOL_INTOXICATION,How alert is the patient?,Talking but unsteady,0
+ALCOHOL_INTOXICATION,How alert is the patient?,"Very drowsy, hard to wake",4
+ALCOHOL_INTOXICATION,How alert is the patient?,Cannot be woken,8
+ALCOHOL_INTOXICATION,Is the patient vomiting?,No,0
+ALCOHOL_INTOXICATION,Is the patient vomiting?,Once or twice,1
+ALCOHOL_INTOXICATION,Is the patient vomiting?,"Again and again, or blood",4
+ALCOHOL_INTOXICATION,How is the breathing?,Normal,0
+ALCOHOL_INTOXICATION,How is the breathing?,Slow or irregular,6
+ALCOHOL_INTOXICATION,"Is the patient also injured, for example from a fall?",No,0
+ALCOHOL_INTOXICATION,"Is the patient also injured, for example from a fall?",Yes,3
+MUSCLE_TEAR,How bad is the pain?,"Mild, can still move",0
+MUSCLE_TEAR,How bad is the pain?,"Strong, hard to move",2
+MUSCLE_TEAR,How bad is the pain?,"Severe, cannot move it at all",4
+MUSCLE_TEAR,Is there swelling or bruising?,None,0
+MUSCLE_TEAR,Is there swelling or bruising?,Some,1
+MUSCLE_TEAR,Is there swelling or bruising?,Large and quick,3
+MUSCLE_TEAR,"Was there a popping sound, or is it out of shape?",No,0
+MUSCLE_TEAR,"Was there a popping sound, or is it out of shape?",Yes,3
+DIABETIC_EMERGENCY,Is the patient a known diabetic?,Yes,0
+DIABETIC_EMERGENCY,Is the patient a known diabetic?,"No, or not known",1
+DIABETIC_EMERGENCY,Is the patient conscious?,Alert,0
+DIABETIC_EMERGENCY,Is the patient conscious?,"Confused, sweaty or shaky",4
+DIABETIC_EMERGENCY,Is the patient conscious?,Unconscious,8
+DIABETIC_EMERGENCY,Can the patient swallow safely?,Yes,0
+DIABETIC_EMERGENCY,Can the patient swallow safely?,No,3
+DIABETIC_EMERGENCY,"Fruity breath, deep fast breathing or very thirsty?",No,0
+DIABETIC_EMERGENCY,"Fruity breath, deep fast breathing or very thirsty?",Yes,4

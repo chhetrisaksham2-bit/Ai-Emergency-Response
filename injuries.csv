@@ -1,0 +1,21 @@
+# Injury types shown in the patient's menu, in this order.
+# base_priority: starting urgency before the intensity questions add points.
+# SAMPLE VALUES - have a doctor or medical reference review them.
+code,name,base_priority
+FAST_TRACK,EMERGENCY - fast track (no questions),9
+BLEEDING,Bleeding injury,5
+DOG_BITE,Dog bite,2
+SNAKE_BITE,Snake bite,6
+STROKE,Stroke,8
+CARDIAC_ARREST,Cardiac arrest,10
+UNKNOWN_CONDITION,Unknown / unclear condition,6
+ROAD_ACCIDENT,Road accident / head injury,8
+FRACTURE,Fracture / broken bone,4
+BURNS,Burns,6
+CHEST_PAIN,Chest pain / heart attack,9
+BREATHING_DIFFICULTY,Breathing difficulty / asthma attack,8
+SEIZURE,Seizure / fits,7
+OVERDOSE_POISONING,Drug overdose / poisoning,8
+ALCOHOL_INTOXICATION,Alcohol intoxication,4
+MUSCLE_TEAR,Gym muscle tear / sprain,2
+DIABETIC_EMERGENCY,Diabetic emergency (very low or high sugar),6

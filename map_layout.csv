@@ -1,0 +1,20 @@
+# Where each landmark is DRAWN on the terminal map (app_ui only). Not used for any distance.
+# x = 0 (left) to 100 (right), y = 0 (top) to 100 (bottom). Rough positions, not to scale.
+# Real distances always come from roads.csv. Change a number here to move a landmark on the map.
+id,x,y
+1,50,50
+2,40,60
+3,29,72
+4,36,93
+5,44,77
+6,62,36
+7,76,22
+8,82,48
+9,24,46
+10,6,34
+11,66,93
+12,86,82
+13,16,84
+14,13,66
+15,68,66
+16,92,8

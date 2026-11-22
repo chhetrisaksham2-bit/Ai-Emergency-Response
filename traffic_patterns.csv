@@ -1,0 +1,15 @@
+# Time slots for each traffic pattern. Slots in one pattern must not overlap.
+# A slot may cross midnight (e.g. 23:00 to 07:00). Outside all slots a road uses its usual_traffic.
+pattern,start,end,level
+MARKET,10:00,13:00,HEAVY
+MARKET,17:00,21:30,JAM
+MARKET,23:00,07:00,CLEAR
+OFFICE,08:30,10:30,HEAVY
+OFFICE,17:30,19:30,HEAVY
+OFFICE,22:00,06:00,CLEAR
+SCHOOL,07:30,08:30,HEAVY
+SCHOOL,13:30,14:30,HEAVY
+HIGHWAY,08:00,10:00,HEAVY
+HIGHWAY,18:00,21:00,JAM
+HIGHWAY,23:00,05:00,CLEAR
+EVENING_OUT,18:00,23:00,HEAVY

@@ -1,0 +1,10 @@
+# Busy hospital demo: four burns patients at Dilaram Chowk, where City Care (H1) is.
+# H1 takes the first three, then runs out of free general-surgeon slots and
+# ambulances, so the fourth goes to the next hospital. The patient window and the
+# admin window show why H1 was skipped ("every general surgeon is busy" or
+# "no BLS ambulance available right now").
+send_at,landmark,injury,patients,answers
+0,Dilaram Chowk,BURNS,1,2|1|1|2
+1,Dilaram Chowk,BURNS,1,2|1|1|2
+2,Dilaram Chowk,BURNS,1,2|1|1|2
+3,Dilaram Chowk,BURNS,1,2|1|1|2
